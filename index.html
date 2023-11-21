@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML tags CheatSheet</title>
+        <link href="/assets/styles/styles.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <h1>HTML tags CheatSheet</h1>
+            <p>Below you will find some examples and explinations of the most common tags used in HTML</P>
+        </header>
+        
+        <main>
+
+            <section class="definitions">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>HTML tag</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><!-- HEAD =========================================================================================================== -->
+                            <td class="code">&lt;head&gt;&lt;/head&gt;</td>
+                            <td>
+                                The <span class="code">&lt;head&gt;</span> element is a container for metadata (data about data) and is placed 
+                                between the <span class="code">&lt;html&gt;</span> tag and the <span class="code">&lt;body&gt;</span> tag.<br><br>
+                                
+                                Metadata is data about the HTML document. Metadata is not displayed.<br><br> 
+                                
+                                Metadata typically define the document title, character set, styles, scripts, and other meta information.<br><br>
+
+                                The following elements can go inside the <span class="code">&lt;head&gt;</span> element:<br><br>
+
+                                <span class="code">&lt;title&gt;</span> (required in every HTML document)<br>
+                                <span class="code">
+                                    &lt;style&gt;<br>
+                                    &lt;base&gt;<br>
+                                    &lt;link&gt;<br>
+                                    &lt;meta&gt;<br>
+                                    &lt;script&gt;<br>
+                                    &lt;noscript&gt;
+                                </span>
+                            </td>
+                        </tr>
+                        <tr><!-- BODY =========================================================================================================== -->
+                            <td class="code">&lt;body&gt;&lt;/body&gt;</td>
+                            <td>
+                                The <span class="code">&lt;body&gt;</span> tag defines the document's body.<br><br>
+
+                                The <span class="code">&lt;body&gt;</span> element contains all the contents of an HTML document, 
+                                such as headings, paragraphs, images, hyperlinks, tables, lists, etc.<br><br>
+
+                                <strong>Note:</strong> There can only be one <span class="code">&lt;body&gt;</span> element in an HTML document.
+                            </td>
+                        </tr>
+                        <tr><!-- HEADER ========================================================================================================= -->
+                            <td class="code">&lt;header&gt;&lt;/header&gt;</td>
+                            <td>
+                                The <span class="code">&lt;header&gt;</span> element represents a container for introductory content or a set of navigational links.<br><br>
+
+                                A <span class="code">&lt;header&gt;</span> element typically contains:<br><br>
+                              
+                                one or more heading elements (<span class="code">&lt;h1&gt;</span> - <span class="code">&lt;h6&gt;</span>)<br>
+                                logo or icon<br>
+                                authorship information<br><br>
+
+                                <strong>Note:</strong> You can have several <span class="code">&lt;header&gt;</span> elements in one HTML document. However, a
+                                <span class="code">&lt;header&gt;</span> cannot be placed within a <span class="code">&lt;footer&gt;</span>, 
+                                <span class="code">&lt;address&gt;</span> or another <span class="code">&lt;header&gt;</span> element.
+                            </td>
+                        </tr>
+                        <tr><!-- NAV ============================================================================================================ -->
+                            <td><span class="code">&lt;nav&gt;&lt;/nav&gt;</span></td>
+                            <td>
+                                The <span class="code">&lt;nav&gt;</span> tag defines a set of navigation links.<br><br>
+
+                                Notice that NOT all links of a document should be inside a <span class="code">&lt;nav&gt;</span> element. 
+                                The <span class="code">&lt;nav&gt;</span> element is intended only for major blocks of navigation links.<br><br>
+                                
+                                Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+                            </td>
+                            
+                        </tr>
+                        <tr><!-- MAIN =========================================================================================================== -->
+                            <td><span class="code">&lt;main&gt;&lt;/main&gt;</span></td>
+                            <td>
+                                The <span class="code">&lt;main&gt;</span> tag specifies the main content of a document.<br><br>
+
+                                The content inside the <span class="code">&lt;main&gt;</span> element should be unique to the document. 
+                                It should not contain any content that is repeated across documents such as sidebars, navigation links, 
+                                copyright information, site logos, and search forms.<br><br>
+                                
+                                Note: There must not be more than one <span class="code">&lt;main&gt;</span> element in a document. 
+                                The <span class="code">&lt;main&gt;</span> element must NOT be a descendant of an <span class="code">&lt;article&gt;</span>, 
+                                <span class="code">&lt;aside&gt;</span>, <span class="code">&lt;footer&gt;</span>, <span class="code">&lt;header&gt;</span>, 
+                                or <span class="code">&lt;nav&gt;</span> element.
+                            </td>
+                        </tr>
+                        <tr><!-- SECTION ======================================================================================================== -->
+                            <td><span class="code">&lt;section&gt;&lt;/section&gt;</span></td>
+                            <td>The <span class="code">&lt;section&gt;</span> tag defines a section in a document.</td>
+                        </tr>
+                        <tr><!-- ARTICLE ======================================================================================================== -->
+                            <td><span class="code">&lt;article&gt;&lt;/article&gt;</span></td>
+                            <td>
+                                The <span class="code">&lt;article&gt;</span> tag specifies independent, self-contained content.<br><br>
+
+                                An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.<br><br>
+                                
+                                Potential sources for the <span class="code">&lt;article&gt;</span> element:<br><br>
+                                
+                                Forum post<br>
+                                Blog post<br>
+                                News story<br><br>
+
+                                <strong>Note:</strong> The <span class="code">&lt;article&gt;</span> element does not render as anything special in a browser. 
+                                However, you can use CSS to style the<span class="code">&lt;article&gt;</span> element.
+                            </td>
+                        </tr>
+                        <tr><!-- ANCHOR ========================================================================================================= -->
+                            <td><span class="code">&lt;a&gt;&lt;/a&gt;</span></td>
+                            <td>
+                                The <span class="code">&lt;a&gt;</span> tag defines a hyperlink, which is used to link from one page to another.<br><br>
+
+                                The most important attribute of the <span class="code">&lt;a&gt;</span> element is the href attribute, which indicates the link's destination.<br><br>
+                                
+                                By default, links will appear as follows in all browsers:<br><br>
+                                
+                                An unvisited link is underlined and blue<br>
+                                A visited link is underlined and purple<br>
+                                An active link is underlined and red
+                            </td>
+                        </tr>
+                        <tr><!-- IMAGE ========================================================================================================== -->
+                            <td><span class="code">&lt;img&gt;</span></td>
+                            <td>
+                                The <span class="code">&lt;img&gt;</span> tag is used to embed an image in an HTML page.<br><br>
+
+                                Images are not technically inserted into a web page; images are linked to web pages. The <span class="code">&lt;img&gt;</span> 
+                                tag creates a holding space for the referenced image.<br><br>
+
+                                The <span class="code">&lt;img&gt;</span> tag has two required attributes:<br><br>
+
+                                src - Specifies the path to the image<br>
+                                alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed<br><br>
+
+                                <strong>Note:</strong> Also, always specify the width and height of an image. If width and height are not specified, 
+                                the page might flicker while the image loads.
+                            </td>
+                        </tr>
+                        <tr><!-- FOOTER ========================================================================================================= -->
+                            <td><span class="code">&lt;footer&gt;&lt;/footer&gt;</span></td>
+                            <td>
+                                The <span class="code">&lt;footer&gt;</span> tag defines a footer for a document or section.<br><br>
+
+                                A <span class="code">&lt;footer&gt;</span> element typically contains:<br><br>
+                                
+                                authorship information<br>
+                                copyright information<br>
+                                contact information<br>
+                                sitemap<br>
+                                back to top links<br>
+                                related documents<br><br>
+
+                                You can have several <span class="code">&lt;footer&gt;</span> elements in one document.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="example">
+                <p>Below is an example of the structure of a typical HTML file:</p>
+                <pre>
+                    <code>
+<span class="code">&lt;html&gt;</span>
+    <span class="code">&lt;head&gt;</span>
+        <span class="code">&lt;itle&gt;&lt;/title&gt;</span> <span class="comment">&lt;!-- Page Title - displayed on the browser tab --&gt;</span>
+    <span class="code">&lt;/head&gt;</span>
+    <span class="code">&lt;body&gt;</span> 
+        <span class="code">&lt;header&gt;</span> <span class="comment">&lt;!-- This is where you place elements like your navigation --&gt;</span>
+            <span class="code">&lt;nav&gt;</span> <span class="comment">&lt;!-- Site navigation goes here, Unordered Lists(&lt;ul&gt;&lt;/ul&gt;) are typically used to build a navigatiion. --&gt;</span>
+            <span class="code">&lt;/nav&gt;</span>
+            <span class="code">&lt;h1&gt;&lt;/h1&gt;</span> <span class="comment">&lt;!-- This is a Heading, h1 is the highest ranking of all the heading tags --&gt;</span>
+        <span class="code">&lt;/header&gt;</span>
+        <span class="code">&lt;main&gt;</span> <span class="comment">&lt;!-- This is where the main content of your page should go --&gt;</span>
+            <span class="code">&lt;section&gt;</span> <span class="comment">&lt;!-- This is a section, you can use this to create sections of related content on your page --&gt;</span>
+                <span class="code">&lt;article&gt;</span> <span class="comment">&lt;!-- This is an article, articles are typically used for things like blog posts --&gt;</span>
+                <span class="code">&lt;img src="images/stickman.gif" width="24" height="39" alt="Stickman"&gt;</span> <span class="comment">&lt;!-- This is an example of an Image tag --&gt;</span>
+                    <span class="code">&lt;a href="tags/tag_base.asp"&gt;&lt;/a&gt;</span> <span class="comment">&lt;!-- This is an example of an acnhor tag, otherwise known as a link --&gt;</span>
+                <span class="code">&lt;/article&gt;</span>
+            <span class="code">&lt;/section&gt;</span>
+        <span class="code">&lt;/main&gt;</span>
+        <span class="code">&lt;footer&gt;</span> <span class="comment">&lt;!-- This is a footer, this is wehere you wouuld place a sitemap and contact information --&gt;</span>
+        <span class="code">&lt;/footer&gt;</span>
+    <span class="code">&lt;/body&gt;</span>
+<span class="code">&lt;html&gt;</span>
+                    </code>
+                </pre>
+            </section>
+
+        </main>
+        
+        <footer>
+
+        </footer>
+
+    </body>
+</html>

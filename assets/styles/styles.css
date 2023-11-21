@@ -1,0 +1,92 @@
+/*
+    font-family: 'Source Code Pro', monospace;
+*/
+
+
+/* Main Content Styling */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(38, 37, 37);
+    color: rgba(255, 255, 255, 0.741);
+}
+
+header {
+    margin-top: 80px;
+    text-align: center;
+}
+
+header h1 {
+    color: #8ab4f8;
+}
+
+
+/* Table Styling */
+table {
+    margin: 40px auto 0;
+    width: 80%;
+    border-spacing: 0px;
+    border: 2px solid rgb(65, 65, 65);
+}
+
+th {
+    text-align: center;
+    font-size: 20px;
+    color: #8ab4f8;
+}
+
+th, td {
+    padding: 10px;
+    border-right: 2px solid rgb(65, 65, 65);
+    border-bottom: 2px solid rgb(65, 65, 65);
+}
+
+tr th:first-child {
+    width: 15%;
+}
+
+tr td:first-child {
+    text-align: center;
+}
+
+tr th:last-child {
+    width: 40%;
+}
+
+tr th:last-child, tr td:last-child {
+    border-right: none !important;
+}
+
+tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+
+/* Code Samples Styling */
+.code, .code-light {
+   
+    font-family: 'Source Code Pro', monospace;
+}
+.code {
+    color: #235db8;
+}
+
+.example {
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px;
+}
+
+pre {
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    border: 2px white solid;
+}
+
+.comment {
+    color: darkgreen;
+}
+
+
+
+
